@@ -1,9 +1,12 @@
+import { AppbarContainer, AppbarHeader } from "../../styles/appbar";
 
 export default function AppbarDesktop({matches}){
 
     return(
         <>
-            <h1>Desktop</h1>
+            <AppbarContainer>
+                <AppbarHeader>My Bags</AppbarHeader>
+            </AppbarContainer>
         </>
     )
 }
