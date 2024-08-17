@@ -17,7 +17,6 @@ function App() {
           }}
         >
           <Appbar/>
-          <Button variant="contained">text</Button>
         </Container>
       </ThemeProvider>
     </>

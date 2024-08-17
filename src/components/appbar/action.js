@@ -5,6 +5,7 @@ import {
   ActionIconsContainerMobile,
 } from "../../styles/appbar";
 import { Favorite, Person, ShoppingCart } from "@mui/icons-material";
+import { Colors } from "../../styles/theme";
 
 export default function Actions({matches}) {
   const Component = matches
@@ -22,6 +23,7 @@ export default function Actions({matches}) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color:matches && Colors.secondary
             }}
           >
             <ShoppingCart />
@@ -37,6 +39,8 @@ export default function Actions({matches}) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color:matches && Colors.secondary
+
             }}
           >
             <Favorite />
@@ -53,6 +57,7 @@ export default function Actions({matches}) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color:matches && Colors.secondary
             }}
           >
             <Person />
