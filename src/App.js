@@ -2,6 +2,7 @@ import { Button, Container, ThemeProvider } from "@mui/material";
 import { useEffect } from "react";
 import theme from "./styles/theme";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
           }}
         >
           <Appbar/>
+          <Banner/>
         </Container>
       </ThemeProvider>
     </>
