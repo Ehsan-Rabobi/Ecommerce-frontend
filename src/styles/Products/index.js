@@ -1,6 +1,6 @@
 import { styled } from "@mui/system";
 import { Colors } from "../theme";
-import { IconButton } from "@mui/material";
+import { Box, Button, IconButton } from "@mui/material";
 
 
 export const Product = styled(Box)(({theme})=>({
@@ -37,4 +37,17 @@ export const ProductFavButton = styled(ProductActionButton)(({isfav , theme})=>(
         right:0,
         top:0
     }
+}))
+
+export const ProductAddToCart = styled(Button)(({show , theme})=>({
+    width:"120px" , 
+    fontSize:"12px",
+    [theme.breakpoints.up('md')]:{
+        position:"absolute",
+        bottom:"2%",
+        width:"300px",
+        padding:"10px 5px"
+    },
+    background:Colors.secondary,
+    opacity:0.9
 }))
