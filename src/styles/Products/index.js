@@ -1,6 +1,7 @@
 import { styled } from "@mui/system";
 import { Colors } from "../theme";
 import { Box, Button, IconButton } from "@mui/material";
+import { slideInBottom } from "../../animation";
 
 
 export const Product = styled(Box)(({theme})=>({
@@ -46,8 +47,16 @@ export const ProductAddToCart = styled(Button)(({show , theme})=>({
         position:"absolute",
         bottom:"2%",
         width:"300px",
-        padding:"10px 5px"
+        padding:"10px 5px",
+        animation:
+            show && `${slideInBottom} 0.5s cubic-bezier(0.250 , 0.460 , 0.450 , 0.940) both`
     },
     background:Colors.secondary,
     opacity:0.9
 }))
+
+export const ProductMetaWrapper = styled(Box)(({theme}) => ({
+
+}))
+
+export const ProductActionsWrapper = styled(Box)(({show , theme})=>({}))
